@@ -1,0 +1,364 @@
+/*  
+Author: Angel Edmonds, Bridgette Burton
+File Name: styles.css
+Date: 11/22/2023
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rule for images */
+img {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style rule for the body selector */
+body {
+  background: linear-gradient(to bottom, #ed0e25, #3498db);
+}
+
+
+/* Style rules for mobile viewport */
+
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile, .mobile-tablet {
+display: block;
+
+}
+
+.tab-desk, .desktop {
+display: none;
+}
+
+
+/* Style rules for header area */
+.mobile h1, .mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+font-family: 'Emblema One', cursive;
+margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+font-family: 'Lora', serif;
+}
+
+
+/* Style rules for navigation area */
+
+/* Style rule for the nav selector */
+nav {
+  background-color: #ed0e25;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+nav li:hover {                              /*Need to continue to work on this part */
+      color: #373684;
+      background-color: #e5e9fc;
+      transform: scale(1.2);
+
+    }
+
+/* Style rules for main content */
+
+/* Style rule for the main selector */
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+  font-family: 'Lora', serif;
+}
+
+/* Style rule for main p */
+main p {
+  font-size: 1.25em;
+}
+
+/* Style rule for main h3 */
+main h3 {
+  padding-top: 2%;
+}
+
+/* Style rule for main ul */
+main ul {
+  list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+  color: #ed0e25;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Style rule for the class selector .welcome */
+.welcome h1 {
+  text-align: center;
+}
+
+
+
+/* Style rule for the class selector .action */
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+border-radius: 50%;
+width: 50%;
+height: auto;
+}
+
+aside {
+text-align: center;
+font-size: 1em;
+font-weight: bold;
+text-shadow: 4px 4px 10px ;     /* add a color for it */
+}
+
+
+#info ul {
+margin-left: 10%;
+}
+
+
+/* Style rule for the id selector #contact */
+#contact, #form  {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #ed0e25;
+  padding: 2%;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link {
+  color: #4645a8;    /* A shade of blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style rules for form elements */
+/* Style rule for fieldset, input, and textarea */
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+/* Style rule for fieldset legend */
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Style rule for form #submit */
+form #submit {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 2%;
+  background-color: #ed0e25;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+
+.btn {
+  background-color: #008CBA; /* Set the default button background color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005682; /* Set the button background color on hover */
+}
+
+.btn:active {
+  background-color: #003350; /* Set the button background color on click */
+}
+
+
+
+/* Style rule for table content */
+h2 {
+  text-align: center;
+  color: #ed0e25; /* Change color as needed */
+}
+
+.daycare-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.daycare-table th, .daycare-table td {
+  border: 1px solid #ddd; /* Border color */
+  padding: 8px;
+  text-align: left;
+}
+
+.daycare-table th {
+  background-color: #f2f2f2; /* Header background color */
+}
+
+.daycare-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Even row background color */
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #fd4d0c;
+  box-shadow: 5px 5px 5px #792101;
+}
+
+td, th {
+  border: 1px solid #a22c02;
+  padding: 2%;
+}
+
+tr:nth-child(odd) {
+  background-color: red;
+}
+
+tr:nth-child(even) {
+  background-color: palegoldenrod;
+}
+
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.65em;
+  clear: left;  
+}
+
+.social img {
+  display: inline-block;
+      padding: 4%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {}
+
+aside {
+grid-column: 1 / span 2;
+}
+
+/*  Tablet Viewport: Style rule for form element */
+/* Style rule for form */
+form {
+ width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+display: grid;
+grid-template-columns: auto auto;
+grid-gap: 20px;
+}
+
+.btn {
+grid-column: 1 / span 2;
+padding: 3%;
+}
+
+/* Tablet Viewport: Style rules for footer area */
+footer {
+overflow: auto;
+}
+
+.copyright {
+float: left;
+width: 65%;
+}
+
+.social {
+float: right;
+width: 25%;
+}
+
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {}
+
+/* Desktop Viewport: Style rules for main content */
+   main h3 {
+    font-size: 1.5em;
+  }
+
+/* Desktop Viewport: Style rule for header */
+    header {
+      padding: 2%;
+    }
+
+/* Desktop Viewport: Style rules for main content */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+aside {
+  grid-column: 1 / span 3;
+  font-size: 2em;
+} 
+
+/*Style rules for iframe content */
+.video-border {
+  border: 3px solid black;
+}
+
+/* Style rule for audio player */
+#audio-player {
+  width: 300px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#audio-player button {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#audio-player button:hover {
+  background-color: #555;
+}
