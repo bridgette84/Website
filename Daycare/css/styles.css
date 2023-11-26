@@ -334,7 +334,7 @@ width: 25%;
 
 aside {
   grid-column: 1 / span 3;
-  font-size: 2em;
+  font-size: 1em;
 } 
 
 /*Style rules for iframe content */
